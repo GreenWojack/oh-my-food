@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+object {
+  width: 100%;
+  display: block;
+  border: none; /* Remove any borders or padding around the object */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+  overflow: hidden;
+}
+.footer {
+  height: 186px;
+  position: absolute;
+  bottom: 0;
+  background-color: #353535;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  .localisation {
+    padding: 15px;
+    background-color: #eaeaea;
+  }
+  .logo {
+    height: 63px;
+  }
+}

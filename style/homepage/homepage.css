@@ -4,22 +4,28 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif; }
 
+.header {
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000; }
+  .header .logo {
+    height: 63px; }
+
+.localisation {
+  text-align: center;
+  padding: 15px;
+  background-color: #eaeaea; }
+
 object {
   width: 100%;
   display: block;
   border: none;
-  /* Remove any borders or padding around the object */
   margin: 0;
-  /* Remove any margin */
   padding: 0;
-  /* Remove any padding */
   overflow: hidden; }
-
-.footer {
-  height: 186px;
-  position: absolute;
-  bottom: 0;
-  background-color: #353535; }
 
 .explorer {
   background-color: #f6f6f6;
@@ -43,9 +49,7 @@ object {
     text-align: start; }
   .fonctionnement p {
     display: flex;
-    /* Use flex display to align items */
     align-items: center;
-    /* Vertically center the items */
     padding: 20px;
     margin: 10px 15px;
     border-radius: 10px;
@@ -58,15 +62,54 @@ object {
   .fonctionnement p:hover {
     transform: scale(1.1); }
 
-.header {
-  position: sticky;
-  width: 100%;
-  text-align: center; }
-  .header .localisation {
-    padding: 15px;
-    background-color: #eaeaea; }
-  .header .logo {
-    height: 63px; }
+.restaurant {
+  display: flex;
+  background-color: #f6f6f6;
+  text-align: start;
+  flex-direction: column;
+  align-items: center; }
+  .restaurant .title {
+    width: 100%;
+    padding: 30px 20px 20px 20px; }
+  .restaurant .card {
+    position: relative;
+    width: 90%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px; }
+    .restaurant .card .new {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #99e2d0;
+      padding: 9px;
+      color: #008766;
+      border-radius: 5px; }
+    .restaurant .card img {
+      width: 100%;
+      border-radius: 10px 10px 0 0px;
+      height: 12em;
+      object-fit: cover; }
+    .restaurant .card .card-title {
+      position: relative;
+      padding: 15px; }
+      .restaurant .card .card-title h3 {
+        margin-bottom: 5px;
+        text-transform: capitalize; }
+      .restaurant .card .card-title .icon {
+        position: absolute;
+        bottom: 25px;
+        right: 10px;
+        width: 32px;
+        fill: transparent;
+        transition: fill 1s linear; }
+      .restaurant .card .card-title .icon:hover {
+        fill: red; }
+
+.footer {
+  height: 186px;
+  background-color: #353535; }
 
 @media (min-width: 768px) {
   .footer {

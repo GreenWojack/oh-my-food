@@ -18,8 +18,51 @@ object {
   bottom: 0;
   background-color: #353535;
 }
+.explorer {
+  background-color: #f6f6f6;
+  text-align: center;
+  h2 {
+    padding: 40px 50px 20px 50px;
+  }
+  p {
+    padding: 0px 30px 30px 30px;
+  }
+  button {
+    padding: 15px;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    color: white;
+    background: rgb(255, 121, 218);
+    background: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+  }
+}
+.fonctionnement {
+  text-align: center;
+  h2 {
+    padding: 30px 15px 20px 15px;
+    text-align: start;
+  }
+  p {
+    display: flex; /* Use flex display to align items */
+    align-items: center; /* Vertically center the items */
+    padding: 20px;
+    margin: 10px 15px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    img {
+      margin-right: 60px;
+      margin-left: 10px;
+    }
+  }
+  p:hover {
+    transform: scale(1.1);
+  }
+}
+
 .header {
-  position: fixed;
+  position: sticky;
   width: 100%;
   text-align: center;
   .localisation {
@@ -36,5 +79,36 @@ object {
     position: absolute;
     bottom: 0;
     background-color: #353535;
+  }
+  .fonctionnement {
+    h2 {
+      width: 64%;
+      margin: 0 auto;
+    }
+    div {
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .fonctionnement {
+    h2 {
+      width: 80%;
+    }
+    p {
+      width: 25%;
+      img {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .fonctionnement {
+    p {
+      width: 20%;
+    }
   }
 }

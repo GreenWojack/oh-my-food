@@ -31,4 +31,11 @@ object {
   .header .logo {
     height: 63px; }
 
+@media (min-width: 768px) {
+  .footer {
+    height: 114px;
+    position: absolute;
+    bottom: 0;
+    background-color: #353535; } }
+
 /*# sourceMappingURL=homepage.css.map */

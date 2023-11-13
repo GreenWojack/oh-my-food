@@ -5,6 +5,16 @@ $gradient: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220,
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
 .header {
   width: 100%;
   text-align: center;
@@ -133,7 +143,7 @@ object {
 @media (min-width: 768px) {
   .footer {
     height: 114px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     background-color: #353535;
   }
@@ -161,11 +171,36 @@ object {
       }
     }
   }
+  .restaurant {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .title {
+      width: 90%;
+    }
+    .card {
+      width: 40%;
+      margin: 20px;
+    }
+  }
 }
 @media (min-width: 1440px) {
   .fonctionnement {
     p {
       width: 20%;
+    }
+  }
+  .restaurant {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .title {
+      width: 80%;
+      margin-left: 13%;
+    }
+    .card {
+      width: 30%;
+      margin: 20px 50px 20px 50px;
     }
   }
 }

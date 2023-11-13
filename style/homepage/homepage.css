@@ -4,6 +4,16 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif; }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit; }
+
 .header {
   width: 100%;
   text-align: center;
@@ -114,7 +124,7 @@ object {
 @media (min-width: 768px) {
   .footer {
     height: 114px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     background-color: #353535; }
 
@@ -131,9 +141,30 @@ object {
   .fonctionnement p {
     width: 25%; }
     .fonctionnement p img {
-      margin-right: 15px; } }
+      margin-right: 15px; }
+
+  .restaurant {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .restaurant .title {
+      width: 90%; }
+    .restaurant .card {
+      width: 40%;
+      margin: 20px; } }
 @media (min-width: 1440px) {
   .fonctionnement p {
-    width: 20%; } }
+    width: 20%; }
+
+  .restaurant {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .restaurant .title {
+      width: 80%;
+      margin-left: 13%; }
+    .restaurant .card {
+      width: 30%;
+      margin: 20px 50px 20px 50px; } }
 
 /*# sourceMappingURL=homepage.css.map */

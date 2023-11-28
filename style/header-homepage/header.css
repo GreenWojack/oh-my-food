@@ -1,4 +1,6 @@
 div {
   text-align: center; }
+  div .goBack {
+    display: none; }
 
 /*# sourceMappingURL=header.css.map */

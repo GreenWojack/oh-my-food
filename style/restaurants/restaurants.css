@@ -4,22 +4,50 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif; }
 
-body {
-  background-color: #eaeaea; }
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit; }
+
+.header {
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000; }
+  .header .logo {
+    height: 63px;
+    padding-top: 15px;
+    text-align: center; }
+    .header .logo .goBack {
+      position: absolute;
+      left: 1em;
+      top: 1em; }
 
 .menu-img {
   width: 100%;
-  object-fit: contain; }
+  height: 275px;
+  object-fit: cover; }
 
 .restaurant {
-  background-color: #eaeaea;
   position: absolute;
-  top: 10em;
-  border-radius: 60px;
-  width: 100%; }
+  top: 18em;
+  width: 100%;
+  justify-content: center; }
 
 .menu {
+  position: relative;
+  background-color: #eaeaea;
+  border-radius: 60px 60px 0px 0px;
   width: 100%;
+  margin: 0 auto;
+  justify-content: center;
   padding: 25px 15px 15px 15px; }
   .menu .title {
     font-size: 220%;
@@ -37,19 +65,20 @@ body {
   .menu .menu-type {
     font-weight: normal;
     text-transform: uppercase;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 10px; }
   .menu .underline {
-    transform: translate(-154px, 0);
+    position: absolute;
+    left: 1em;
     border-bottom: 3px solid #99e2d0;
     width: 40px;
-    margin-top: 5px;
-    margin-bottom: 5px; }
+    margin-top: 25px; }
   .menu .menu-item {
     width: 100%;
     padding: 10px;
     background-color: white;
     border-radius: 5px;
-    margin-top: 5px; }
+    margin-top: 10px; }
     .menu .menu-item .menu-item-title {
       font-weight: bold; }
     .menu .menu-item .menu-item-subtitle {
@@ -90,5 +119,37 @@ object {
 .footer {
   height: 186px;
   background-color: #353535; }
+
+@media (min-width: 768px) {
+  .footer {
+    height: 114px; } }
+@media (min-width: 1440px) {
+  .menu-img {
+    height: 383px;
+    object-fit: cover; }
+
+  .restaurant {
+    top: 26em;
+    text-align: center; }
+
+  .menu {
+    text-align: start;
+    width: 70%;
+    border-radius: 25px 25px 0 0; }
+    .menu .menu-header {
+      text-align: center;
+      padding: 15px; }
+    .menu .menu-type {
+      margin-bottom: 10px; }
+    .menu .menu-type,
+    .menu .menu-item {
+      width: 65%; }
+    .menu .underline {
+      margin-top: 25px;
+      left: 18.4%; }
+    .menu .menu-item {
+      margin-top: 10px; }
+      .menu .menu-item .menu-item-price {
+        right: 20%; } }
 
 /*# sourceMappingURL=restaurants.css.map */

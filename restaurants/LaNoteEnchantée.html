@@ -18,37 +18,48 @@
     <img class="menu-img" src="../assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant" />
     <div class="restaurant">
       <div class="menu">
-        <h1 class="title">la note enchantée</h1>
-        <div class="icon-container">
-          <svg class="icon" width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M12.2208 2.40551L12.2206 2.40576L11.3741 3.35732L11.0005 3.77727L10.627 3.35732L9.78047 2.40576L9.77992 2.40514C7.78271 0.152585 4.59762 -0.169649 2.47664 1.80201C-0.0175439 4.1245 -0.15494 8.32357 2.0848 10.8495L10.399 20.2148C10.399 20.2149 10.399 20.2149 10.3991 20.2149C10.7372 20.5955 11.2595 20.5955 11.5977 20.2149C11.5977 20.2149 11.5978 20.2149 11.5978 20.2148L19.9122 10.8493L19.9123 10.8492C22.1559 8.32335 22.0186 4.12461 19.5245 1.80213L12.2208 2.40551ZM12.2208 2.40551C14.2226 0.15233 17.4035 -0.169452 19.5243 1.80187L12.2208 2.40551Z"
-              stroke="#101010" />
-          </svg>
+        <div class="menu-header">
+          <h1 class="title">La note enchantée</h1>
+          <div class="icon-container">
+            <img class="icon-empty" src="../assets/emptyLike.png" alt="" />
+            <img class="icon-like" src="../assets/Status=Liked.png" alt="" />
+          </div>
         </div>
         <div class="entry">
           <h3 class="menu-type">entrées</h3>
           <div class="underline"></div>
           <div class="menu-item">
             <p class="menu-item-title">Ravioles de foie gras</p>
-            <span class="menu-item-subtitle">Accompagnées de leur crème à la truffe</span>
-            <span class="menu-item-price">25€</span>
+            <div class="menu-item-description">
+              <div class="menu-item-subtitle">Accompagnées de leur crème à la truffe</div>
+              <div class="menu-item-price">25€</div>
+              <div class="menu-item-selected"><img src="../assets/Check.png" alt="check" /></div>
+            </div>
           </div>
           <div class="menu-item">
             <p class="menu-item-title">Caviar osciètre</p>
-            <span class="menu-item-subtitle">Sur blini à la farine de blé noir</span>
-            <span class="menu-item-price">35€</span>
+            <div class="menu-item-description">
+              <div class="menu-item-subtitle">Sur blini à la farine de blé noir</div>
+              <div class="menu-item-price">35€</div>
+              <div class="menu-item-selected"><img src="../assets/Check.png" alt="check" /></div>
+            </div>
           </div>
 
           <div class="menu-item">
             <p class="menu-item-title">Homar et espuma de potiron</p>
-            <span class="menu-item-subtitle">Marinés aux zestes d'orange</span>
-            <span class="menu-item-price">20€</span>
+            <div class="menu-item-description">
+              <div class="menu-item-subtitle">Marinés aux zestes d'orange</div>
+              <div class="menu-item-price">20€</div>
+              <div class="menu-item-selected"><img src="../assets/Check.png" alt="check" /></div>
+            </div>
           </div>
           <div class="menu-item">
             <p class="menu-item-title">Foie gras de canard cuit entier</p>
-            <span class="menu-item-subtitle">Confiture de figure et pain toasté</span>
-            <span class="menu-item-price">35€</span>
+            <div class="menu-item-description">
+              <div class="menu-item-subtitle">Confiture de figure et pain toasté</div>
+              <div class="menu-item-price">35€</div>
+              <div class="menu-item-selected"><img src="../assets/Check.png" alt="check" /></div>
+            </div>
           </div>
         </div>
         <div class="dish">
@@ -56,18 +67,27 @@
           <div class="underline"></div>
           <div class="menu-item">
             <p class="menu-item-title">Noix de coquilles Saint-Jacques</p>
-            <span class="menu-item-subtitle">Sur lit de purée de céleri-rave</span>
-            <span class="menu-item-price">40€</span>
+            <div class="menu-item-description">
+              <div class="menu-item-subtitle">Sur lit de purée de céleri-rave</div>
+              <div class="menu-item-price">40€</div>
+              <div class="menu-item-selected"><img src="../assets/Check.png" alt="check" /></div>
+            </div>
           </div>
           <div class="menu-item">
             <p class="menu-item-title">Langoustine poêlée</p>
-            <span class="menu-item-subtitle">Purée de patate douce</span>
-            <span class="menu-item-price">35€</span>
+            <div class="menu-item-description">
+              <div class="menu-item-subtitle">Purée de patate douce</div>
+              <div class="menu-item-price">35€</div>
+              <div class="menu-item-selected"><img src="../assets/Check.png" alt="check" /></div>
+            </div>
           </div>
           <div class="menu-item">
             <p class="menu-item-title">Mijoté de queue de boeuf</p>
-            <span class="menu-item-subtitle">Et riz sauvage aux zestes de citron</span>
-            <span class="menu-item-price">45€</span>
+            <div class="menu-item-description">
+              <div class="menu-item-subtitle">Et riz sauvage aux zestes de citron</div>
+              <div class="menu-item-price">45€</div>
+              <div class="menu-item-selected"><img src="../assets/Check.png" alt="check" /></div>
+            </div>
           </div>
         </div>
         <div class="dessert">
@@ -75,18 +95,27 @@
           <div class="underline"></div>
           <div class="menu-item">
             <p class="menu-item-title">Macaron noisette et chocolat</p>
-            <span class="menu-item-subtitle">Glace au caramel brun et sel de Guérande</span>
-            <span class="menu-item-price">18€</span>
+            <div class="menu-item-description">
+              <div class="menu-item-subtitle">Glace au caramel brun et sel de Guérande</div>
+              <div class="menu-item-price">18€</div>
+              <div class="menu-item-selected"><img src="../assets/Check.png" alt="check" /></div>
+            </div>
           </div>
           <div class="menu-item">
             <p class="menu-item-title">Baba au rhum revisité</p>
-            <span class="menu-item-subtitle">Avec son coulis de citron</span>
-            <span class="menu-item-price">22€</span>
+            <div class="menu-item-description">
+              <div class="menu-item-subtitle">Avec son coulis de citron</div>
+              <div class="menu-item-price">22€</div>
+              <div class="menu-item-selected"><img src="../assets/Check.png" alt="check" /></div>
+            </div>
           </div>
           <div class="menu-item">
             <p class="menu-item-title">Tarte au citron meringuée</p>
-            <span class="menu-item-subtitle">Déstructurée</span>
-            <span class="menu-item-price">23€</span>
+            <div class="menu-item-description">
+              <div class="menu-item-subtitle">Déstructurée</div>
+              <div class="menu-item-price">23€</div>
+              <div class="menu-item-selected"><img src="../assets/Check.png" alt="check" /></div>
+            </div>
           </div>
         </div>
         <div class="order">

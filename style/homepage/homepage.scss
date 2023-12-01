@@ -1,4 +1,5 @@
 $gradient: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+
 * {
   margin: 0;
   padding: 0;
@@ -57,6 +58,12 @@ object {
     color: white;
     background: rgb(255, 121, 218);
     background: $gradient;
+    box-shadow: 0px 4px 6px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+  }
+  button:hover {
+    filter: brightness(1.25);
+    box-shadow: 0px 4px 6px 10px rgba(0, 0, 0, 0.1);
   }
 }
 .fonctionnement {
@@ -122,16 +129,27 @@ object {
         margin-bottom: 5px;
         text-transform: capitalize;
       }
-      .icon {
-        position: absolute;
-        bottom: 25px;
-        right: 10px;
-        width: 32px;
-        fill: transparent;
-        transition: fill 1s linear;
-      }
-      .icon:hover {
-        fill: red;
+
+      .icon-container {
+        margin-left: 1em;
+        .icon {
+          position: absolute;
+          right: 15px;
+          top: 0;
+          height: 100%;
+          width: 25px;
+          object-fit: contain;
+        }
+        .icon-like {
+          position: absolute;
+          transition: all ease-in 0.5s;
+          transform: scale(0);
+        }
+        &:hover {
+          .icon-like {
+            transform: scale(1);
+          }
+        }
       }
     }
   }

@@ -137,16 +137,21 @@ a {
     .menu-item-description {
       width: 100%;
       display: flex;
+      overflow: hidden;
       .menu-item-subtitle {
         font-size: 90%;
-        width: 95%;
+        width: 85%;
         order: 1;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        transition: all ease-in-out 0.6s;
       }
       .menu-item-price {
         transition: all ease-in 0.5s;
         font-weight: bold;
         order: 2;
-        width: auto;
+        width: 60px;
         transform: translateX(0.5em);
       }
       .menu-item-selected {
@@ -165,8 +170,11 @@ a {
     }
     &:hover {
       .menu-item-description {
+        .menu-item-subtitle {
+          width: 70%;
+        }
         .menu-item-price {
-          transform: translateX(-40px);
+          transform: translateX(2px);
         }
         .menu-item-selected {
           transform: translateX(-50px);
@@ -256,6 +264,31 @@ object {
       margin-top: 10px;
       .menu-item-price {
         right: 3%;
+      }
+      .menu-item-description {
+        .menu-item-subtitle {
+          transition: all ease-in 0.5s;
+          width: 94%;
+        }
+        .menu-item-price {
+          width: 6%;
+        }
+        .menu-item-selected {
+          transition: all ease-in 0.5s;
+        }
+      }
+      &:hover {
+        .menu-item-description {
+          .menu-item-subtitle {
+            width: 94%;
+          }
+          .menu-item-price {
+            transform: translateX(-40px);
+          }
+          .menu-item-selected {
+            transform: translateX(-50px);
+          }
+        }
       }
     }
   }

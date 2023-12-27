@@ -32,8 +32,8 @@ $gradient: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220,
 }
 .lds-dual-ring {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 40%;
 }
 .lds-dual-ring:after {
   content: " ";
@@ -205,6 +205,11 @@ $gradient: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220,
   }
 }
 @media (min-width: 768px) {
+  .lds-dual-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
   .content {
     .footer {
       height: 114px;

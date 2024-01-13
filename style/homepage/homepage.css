@@ -33,11 +33,11 @@
   border-radius: 50%;
   border: 6px solid #fff;
   border-color: #1b1919 transparent #1b1919 transparent;
-  animation: lds-dual-ring 5s, fadeOut 1s 4.5s forwards; }
+  animation: lds-dual-ring 3s, fadeOut 1s 3s forwards; }
 
 .content {
   opacity: 1;
-  animation: fadeIn 5s;
+  animation: fadeIn 3s;
   overflow: hidden;
   z-index: 999; }
   .content a {
@@ -72,16 +72,18 @@
   .content .explorer {
     background-color: #f6f6f6;
     text-align: center; }
+    .content .explorer h1 {
+      padding: 40px 10px 20px 10px; }
     .content .explorer h2 {
       padding: 40px 50px 20px 50px; }
     .content .explorer p {
       padding: 0px 30px 30px 30px; }
     .content .explorer button {
       padding: 15px;
+      border: none;
       border-radius: 50px;
       margin-bottom: 50px;
       color: white;
-      background: #ff79da;
       background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
       box-shadow: 0px 4px 6px 5px rgba(0, 0, 0, 0.1);
       transition: all 0.5s ease-in-out; }
@@ -89,24 +91,39 @@
       filter: brightness(1.25);
       box-shadow: 0px 4px 6px 10px rgba(0, 0, 0, 0.1); }
   .content .fonctionnement {
+    padding-bottom: 40px;
     text-align: center; }
     .content .fonctionnement h2 {
       padding: 30px 15px 20px 15px;
       text-align: start; }
-    .content .fonctionnement p {
+    .content .fonctionnement .step {
       display: flex;
+      position: relative;
       align-items: center;
-      padding: 20px;
+      padding: 30px;
+      text-align: center;
       margin: 10px 15px;
-      border-radius: 10px;
+      border-radius: 20px;
       background-color: #f6f6f6;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       cursor: pointer; }
-      .content .fonctionnement p img {
-        margin-right: 60px;
-        margin-left: 10px; }
-    .content .fonctionnement p:hover {
-      transform: scale(1.1); }
+      .content .fonctionnement .step .step-icon {
+        position: absolute;
+        left: 2em; }
+      .content .fonctionnement .step .violet {
+        display: none; }
+      .content .fonctionnement .step .step:hover .violet {
+        display: initial; }
+      .content .fonctionnement .step span {
+        position: absolute;
+        left: 30%; }
+      .content .fonctionnement .step .step-count {
+        position: absolute;
+        left: -10px; }
+    .content .fonctionnement .step:hover {
+      transform: scale(1.05); }
+      .content .fonctionnement .step:hover .violet {
+        display: initial; }
   .content .restaurant {
     display: flex;
     background-color: #f6f6f6;

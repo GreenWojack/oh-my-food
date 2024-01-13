@@ -196,6 +196,7 @@ a {
     margin-top: 10px;
     button {
       padding: 15px 50px 15px 50px;
+      border: none;
       border-radius: 50px;
       margin-top: 20px;
       margin-bottom: 50px;
@@ -224,6 +225,38 @@ object {
   background-color: #353535;
 }
 @media (min-width: 768px) {
+  .menu {
+    width: 70%;
+    .menu-header {
+      .icon-container {
+        margin-top: 20px;
+      }
+    }
+    .menu-item {
+      .menu-item-description {
+        .menu-item-subtitle {
+          transition: all ease-in 0.5s;
+          width: 92%;
+        }
+        .menu-item-price {
+          width: 8%;
+        }
+        .menu-item-selected {
+          transition: all ease-in 0.5s;
+        }
+      }
+      &:hover {
+        .menu-item-description {
+          .menu-item-price {
+            transform: translateX(50px);
+          }
+          .menu-item-selected {
+            transform: translateX(-50px);
+          }
+        }
+      }
+    }
+  }
   .footer {
     height: 114px;
   }
